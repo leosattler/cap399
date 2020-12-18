@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH --nodes=1 # utilizar um único nó!
+#SBATCH --ntasks=1 # Numero total de processos MPI
+#SBATCH -p cpu_dev # Fila (partition) "econômica" (até 4 nós, até 4x24 cores)
+#SBATCH -J ProjetoPSMP # Nome job
+
+
+#Exibe os nós alocados para o Job
+echo $SLURM_JOB_NODELIST
+nodeset -e $SLURM_JOB_NODELIST
+
+cd $SLURM_SUBMIT_DIR
+
+#Configura os compiladores
+
+# Define o executavel e dispara a execucao
+EXEC=/scratch/padinpe/leonardo.cassara/PSMP_scratch/Projeto/PGI_2/tscnovec
+
+$EXEC

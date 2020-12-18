@@ -1,0 +1,28 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{PREFÁCIO}
+\addcontentsline{toc}{chapter}{PREFÁCIO}% \protect\numberline{}
+
+Os resultados deste trabalho foram gerados no supercomputador Santos Dumont sob usuário \textit{leonardo.cassara}. Todos os arquivos referentes à geração dos resultados se encontram divididos em seis diretórios: três referentes à Seção \ref{chp:1} deste projeto, \texttt{GCC\_1}, \texttt{ICC\_1}, \texttt{PGI\_1} (e referentes aos compiladores \texttt{GNU v.8.3}, \texttt{Intel v.19.1} e \texttt{PGI v.19.4}, respectivamente), e três que dizem respeito à Seção \ref{chp:2} deste projeto, \texttt{GCC\_2}, \texttt{ICC\_2}, \texttt{PGI\_2} (e referentes aos mesmos compiladores). Cada diretório contém seus respectivos scripts de submissão, outputs, makefiles, os programas de teste e outros arquivos necessários para a geração dos resultados. Tais diretórios se encontram no seguinte local do Santos Dumont:
+\begin{lstlisting}[language=bash,style=mystyle2]
+/scratch/padinpe/leonardo.cassara/PSMP_scratch/Projeto/
+\end{lstlisting}
+%\vspace{-3mm}
+
+A análise dos resultados foi realizada localmente (em um computador pessoal) através da linguagem \texttt{Python}, com uso das bibliotecas \texttt{numpy} e \texttt{pandas} para geração das tabelas e \texttt{matplotlib} para criação das figuras. Todos os arquivos referentes à análise dos resultados estão no repositório deste projeto. O conteúdo do repositório é descrito abaixo:
+
+\begin{itemize}
+\item pasta \textbf{sdumont}: cópia dos seis diretórios presentes no Santos Dumont, disponibilizando os resultados para o público sem acesso ao supercomputador.
+
+\item pasta \textbf{Relatorio}: contém os arquivos \LaTeX  \hspace{0.09mm} utilizados para a geração deste manuscrito.
+
+\item \textit{data\_handler.py}: script de análise dos resultados, que gera as tabelas e as figuras presentes neste manuscrito, bem como uma planilha com os resultados.
+
+\item \textit{data\_comp.py}: script para comparação dos resultados, que gera tabelas com a alteração relativa entre as quantidades contrastadas.
+
+\item \textit{stats\_tools.py}: script para cálculo das estatística dos resultados, utilizado pelos scripts \textit{data\_handler.py} e \textit{data\_comp.py}.
+
+\item \textit{results1.xlsx}: planilha contendo os resultados apresentados nas Tabelas \ref{tab:a} e \ref{tab:b} deste manuscrito.
+
+\item \textit{results2.xlsx}: planilha contendo os resultados da Seção \ref{chp:2}.
+\end{itemize}

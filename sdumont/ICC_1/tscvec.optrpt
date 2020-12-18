@@ -1,0 +1,3755 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+
+Begin optimization report for: main()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(786,2) inlined into tsc.c(5435,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(787,3) inlined into tsc.c(5435,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(814,2) inlined into tsc.c(5436,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (817:4) and cc (819:3)
+
+   LOOP BEGIN at tsc.c(816,3) inlined into tsc.c(5436,2)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(866,2) inlined into tsc.c(5438,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i+1] (869:4) and cc (871:3)
+
+   LOOP BEGIN at tsc.c(868,3) inlined into tsc.c(5438,2)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at tsc.c(868,3) inlined into tsc.c(5438,2)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(893,2) inlined into tsc.c(5439,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(894,3) inlined into tsc.c(5439,2)
+      remark #15301: REVERSED LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(921,2) inlined into tsc.c(5440,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(922,3) inlined into tsc.c(5440,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(922,3) inlined into tsc.c(5440,2)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(922,3) inlined into tsc.c(5440,2)
+   <Peeled loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(946,2) inlined into tsc.c(5441,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (948:4) and cc (950:3)
+
+   LOOP BEGIN at tsc.c(947,3) inlined into tsc.c(5441,2)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between a[i] (948:4) and a[16000] (948:4)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(1963,2) inlined into tsc.c(5475,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1964,3) inlined into tsc.c(5475,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1964,3) inlined into tsc.c(5475,2)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(3286,2) inlined into tsc.c(5519,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (3288:4) and cc (3290:3)
+
+   LOOP BEGIN at tsc.c(3287,3) inlined into tsc.c(5519,2)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between a[0] (3288:4) and a[i] (3288:4)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(3411,2) inlined into tsc.c(5523,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3413,3) inlined into tsc.c(5523,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(3480,2) inlined into tsc.c(5525,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3482,3) inlined into tsc.c(5525,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(3539,2) inlined into tsc.c(5527,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3541,3) inlined into tsc.c(5527,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(3609,2) inlined into tsc.c(5529,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3611,3) inlined into tsc.c(5529,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3611,3) inlined into tsc.c(5529,2)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3611,3) inlined into tsc.c(5529,2)
+   <Remainder loop for vectorization>
+      remark #15335: remainder loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(3642,2) inlined into tsc.c(5530,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3644,3) inlined into tsc.c(5530,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(4675,2) inlined into tsc.c(5561,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4677,3) inlined into tsc.c(5561,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(5032,2) inlined into tsc.c(5573,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between b[i] (5033:3) and cc (5036:3)
+
+   LOOP BEGIN at tsc.c(5033,3) inlined into tsc.c(5573,2)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(5060,2) inlined into tsc.c(5574,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (5062:4) and cc (5064:3)
+
+   LOOP BEGIN at tsc.c(5061,3) inlined into tsc.c(5574,2)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(5088,2) inlined into tsc.c(5575,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[*(ip+i*4)] (5090:4) and cc (5092:3)
+
+   LOOP BEGIN at tsc.c(5089,3) inlined into tsc.c(5575,2)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(5115,2) inlined into tsc.c(5576,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5116,3) inlined into tsc.c(5576,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(5144,2) inlined into tsc.c(5577,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5145,3) inlined into tsc.c(5577,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(5172,2) inlined into tsc.c(5578,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5173,3) inlined into tsc.c(5578,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(5199,2) inlined into tsc.c(5579,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5200,3) inlined into tsc.c(5579,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(5226,2) inlined into tsc.c(5580,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5227,3) inlined into tsc.c(5580,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(5253,2) inlined into tsc.c(5581,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5254,3) inlined into tsc.c(5581,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(5280,2) inlined into tsc.c(5582,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5281,3) inlined into tsc.c(5582,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(5308,2) inlined into tsc.c(5583,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5310,3) inlined into tsc.c(5583,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(5337,2) inlined into tsc.c(5584,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5339,3) inlined into tsc.c(5584,2)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: check(int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(167,2)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(177,2)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(186,2)
+LOOP END
+===========================================================================
+
+Begin optimization report for: set(int *, float *, float *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(5401,2)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(5410,2)
+   remark #15301: FUSED LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(5411,2)
+LOOP END
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(5412,2)
+LOOP END
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(5413,2)
+LOOP END
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(5414,2)
+LOOP END
+
+LOOP BEGIN at tsc.c(122,3) inlined into tsc.c(5415,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(123,4) inlined into tsc.c(5415,2)
+      remark #15301: FUSED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(123,4) inlined into tsc.c(5416,2)
+   LOOP END
+
+   LOOP BEGIN at tsc.c(123,4) inlined into tsc.c(5417,2)
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(122,3) inlined into tsc.c(5416,2)
+LOOP END
+
+LOOP BEGIN at tsc.c(122,3) inlined into tsc.c(5417,2)
+LOOP END
+
+LOOP BEGIN at tsc.c(5419,2)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+===========================================================================
+
+Begin optimization report for: s1111()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(838,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(839,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s114()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(974,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between aa[i][j] (977:5) and cc (980:3)
+
+   LOOP BEGIN at tsc.c(975,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive   [ tsc.c(976,4) ]
+
+      LOOP BEGIN at tsc.c(976,4)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+
+      LOOP BEGIN at tsc.c(976,4)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s115()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1004,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1005,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at tsc.c(1006,4)
+      <Peeled loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at tsc.c(1006,4)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(1006,4)
+      <Remainder loop for vectorization>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(1006,4)
+      <Remainder loop for vectorization>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s1115()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1031,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1032,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at tsc.c(1033,4)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s116()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1059,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1060,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1060,3)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1060,3)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s118()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1090,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (1093:5) and cc (1096:3)
+
+   LOOP BEGIN at tsc.c(1091,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between a[i-j-1] (1093:5) and a[i] (1093:5)
+
+      LOOP BEGIN at tsc.c(1092,4)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between a[i] (1093:5) and a[i] (1093:5)
+      LOOP END
+
+      LOOP BEGIN at tsc.c(1092,4)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s119()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1119,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1120,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at tsc.c(1121,4)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(1121,4)
+      <Peeled loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at tsc.c(1121,4)
+      <Remainder loop for vectorization>
+         remark #15335: remainder loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s1119()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1148,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1149,3)
+   <Multiversioned v1>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1149,3)
+   <Multiversioned v2>
+      remark #15304: loop was not vectorized: non-vectorizable loop instance from multiversioning
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s121()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1180,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1181,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1181,3)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1181,3)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s122(int, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1210,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (1215:4) and cc (1217:3)
+
+   LOOP BEGIN at tsc.c(1213,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between a[i] (1215:4) and a[i] (1215:4)
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1213,3)
+   <Remainder>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s123()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1242,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[j] (1246:4) and cc (1252:3)
+
+   LOOP BEGIN at tsc.c(1244,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between a[j] (1246:4) and a[j] (1249:5)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s124()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1276,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1278,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s125()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1310,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1312,3)
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at tsc.c(1313,4)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s126()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1341,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between bb[j][i] (1345:5) and cc (1350:3)
+
+   LOOP BEGIN at tsc.c(1343,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between k (1344:15) and k (1346:7)
+
+      LOOP BEGIN at tsc.c(1344,4)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between bb[j][i] (1345:5) and bb[j-1][i] (1345:5)
+      LOOP END
+
+      LOOP BEGIN at tsc.c(1344,4)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s127()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1374,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1376,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s128()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1407,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1409,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s131()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1438,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1439,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1439,3)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1439,3)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s132()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1466,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1467,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1467,3)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1467,3)
+   <Remainder loop for vectorization>
+      remark #15335: remainder loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s141()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1495,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between array[k] (1499:5) and cc (1503:3)
+
+   LOOP BEGIN at tsc.c(1496,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between array[k] (1499:5) and array[k] (1499:5)
+
+      LOOP BEGIN at tsc.c(1498,4)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between array[k] (1499:5) and array[k] (1499:5)
+      LOOP END
+
+      LOOP BEGIN at tsc.c(1498,4)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s151()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1532,14)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1516,2) inlined into tsc.c(1533,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1516,2) inlined into tsc.c(1533,3)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1516,2) inlined into tsc.c(1533,3)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s152()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1562,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1563,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s161()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1591,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between c[i+1] (1599:4) and cc (1603:3)
+
+   LOOP BEGIN at tsc.c(1592,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between c[i+1] (1599:4) and c[i] (1596:4)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s1161()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1625,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1626,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1626,3)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s162(int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1659,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1661,4)
+   <Multiversioned v1>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1661,4)
+   <Remainder loop for vectorization, Multiversioned v1>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1661,4)
+   <Multiversioned v2>
+      remark #15304: loop was not vectorized: non-vectorizable loop instance from multiversioning
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1661,4)
+   <Remainder, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1661,4)
+   <Remainder loop for vectorization, Multiversioned v1>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s171(int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1687,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i*inc] (1689:4) and cc (1691:3)
+
+   LOOP BEGIN at tsc.c(1688,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between a[i*inc] (1689:4) and a[i*inc] (1689:4)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s172(int, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1713,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (1715:4) and cc (1717:3)
+
+   LOOP BEGIN at tsc.c(1714,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between a[i] (1715:4) and a[i] (1715:4)
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1714,3)
+   <Remainder>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s173()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1740,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1741,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s174..0(int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1767,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1768,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s175(int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1794,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (1796:4) and cc (1798:3)
+
+   LOOP BEGIN at tsc.c(1795,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between a[i] (1796:4) and a[i+inc] (1796:4)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s176()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1823,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1825,4)
+      remark #15301: PERMUTED LOOP WAS VECTORIZED
+
+      LOOP BEGIN at tsc.c(1824,3)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s211()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1858,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1859,3)
+   <Distributed chunk1>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1859,3)
+   <Remainder loop for vectorization, Distributed chunk1>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1859,3)
+   <Peeled loop for vectorization, Distributed chunk2>
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1859,3)
+   <Distributed chunk2>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1859,3)
+   <Remainder loop for vectorization, Distributed chunk2>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1859,3)
+   <Peeled loop for vectorization, Distributed chunk1>
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1859,3)
+   <Remainder loop for vectorization, Distributed chunk1>
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1859,3)
+   <Remainder loop for vectorization, Distributed chunk2>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s212()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1885,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1886,3)
+   <Distributed chunk1>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1886,3)
+   <Remainder loop for vectorization, Distributed chunk1>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1886,3)
+   <Distributed chunk2>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1886,3)
+   <Remainder loop for vectorization, Distributed chunk2>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1886,3)
+   <Remainder loop for vectorization, Distributed chunk1>
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1886,3)
+   <Remainder loop for vectorization, Distributed chunk2>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s1213()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1910,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1911,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1911,3)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1911,3)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1911,3)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s221()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1938,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1939,3)
+   <Peeled, Distributed chunk1>
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at tsc.c(1939,3)
+      <Peeled, Peeled loop for vectorization, Distributed chunk1>
+      LOOP END
+
+      LOOP BEGIN at tsc.c(1939,3)
+      <Peeled, Distributed chunk1>
+         remark #15301: PARTIAL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(1939,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk1>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(1939,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk1>
+      LOOP END
+
+      LOOP BEGIN at tsc.c(1939,3)
+      <Peeled, Distributed chunk2>
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between b[i] (0:0) and b[i-1] (0:0)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s222()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1990,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1991,3)
+   <Distributed chunk1>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1991,3)
+   <Remainder loop for vectorization, Distributed chunk1>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1991,3)
+   <Distributed chunk2>
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between e[i] (1993:4) and e[i-1] (1993:4)
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1991,3)
+   <Remainder, Distributed chunk2>
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1991,3)
+   <Peeled loop for vectorization, Distributed chunk3>
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1991,3)
+   <Distributed chunk3>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1991,3)
+   <Remainder loop for vectorization, Distributed chunk3>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1991,3)
+   <Peeled loop for vectorization, Distributed chunk1>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s231()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2018,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2020,4)
+   <Multiversioned v1>
+      remark #15301: PERMUTED LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2020,4)
+   <Multiversioned v2>
+      remark #15304: loop was not vectorized: non-vectorizable loop instance from multiversioning
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s232()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2047,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between aa[j][i] (2050:5) and cc (2053:3)
+
+   LOOP BEGIN at tsc.c(2048,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive   [ tsc.c(2049,4) ]
+
+      LOOP BEGIN at tsc.c(2049,4)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between aa[j][i] (2050:5) and aa[j][i-1] (2050:5)
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2049,4)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s1232()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2074,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between aa[i][j] (2077:5) and cc (2080:3)
+
+   LOOP BEGIN at tsc.c(2075,3)
+      remark #15541: outer loop was not auto-vectorized: consider using SIMD directive   [ tsc.c(2076,4) ]
+
+      LOOP BEGIN at tsc.c(2076,4)
+         remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2076,4)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s233()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2103,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2105,4)
+   <Distributed chunk1>
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at tsc.c(2104,3)
+         remark #15301: PERMUTED LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2104,3)
+      <Peeled loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2104,3)
+      <Remainder loop for vectorization>
+         remark #15335: remainder loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2108,4)
+   <Distributed chunk2>
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+      LOOP BEGIN at tsc.c(2104,3)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between bb[j][i] (2109:5) and bb[j][i-1] (2109:5)
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2104,3)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s2233()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2133,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2135,4)
+   <Distributed chunk1>
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at tsc.c(2134,3)
+         remark #15301: PERMUTED LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2134,3)
+      <Peeled loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2134,3)
+      <Remainder loop for vectorization>
+         remark #15335: remainder loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2134,3)
+   <Distributed chunk2>
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at tsc.c(2138,4)
+         remark #15300: LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2138,4)
+      <Peeled loop for vectorization>
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2138,4)
+      <Remainder loop for vectorization>
+         remark #15335: remainder loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s235()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2164,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2165,3)
+   <Distributed chunk1>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2167,4)
+   <Distributed chunk2>
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at tsc.c(2165,3)
+         remark #15301: PERMUTED LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s241()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2194,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2195,3)
+   <Peeled, Distributed chunk1>
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at tsc.c(2195,3)
+      <Peeled, Distributed chunk1>
+         remark #15301: PARTIAL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2195,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk1>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2195,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk1>
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2195,3)
+      <Peeled, Distributed chunk2>
+         remark #15301: PARTIAL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2195,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk2>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2195,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk2>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s242(float, float)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2222,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2223,3)
+   <Peeled, Distributed chunk1>
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at tsc.c(2223,3)
+      <Peeled, Peeled loop for vectorization, Distributed chunk1>
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2223,3)
+      <Peeled, Distributed chunk1>
+         remark #15301: PARTIAL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2223,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk1>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2223,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk1>
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2223,3)
+      <Peeled, Distributed chunk2>
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between a[i] (0:0) and a[i-1] (0:0)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s243()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2249,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2250,3)
+   <Peeled, Distributed chunk1>
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at tsc.c(2250,3)
+      <Peeled, Distributed chunk1>
+         remark #15301: PARTIAL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2250,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk1>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2250,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk1>
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2250,3)
+      <Peeled, Distributed chunk2>
+         remark #15301: PARTIAL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2250,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk2>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s244()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2278,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2279,3)
+   <Peeled, Distributed chunk1>
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at tsc.c(2279,3)
+      <Peeled, Distributed chunk1>
+         remark #15301: PARTIAL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2279,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk1>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2279,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk1>
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2279,3)
+      <Peeled, Distributed chunk2>
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (2280:4) and a[i+1] (2282:4)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s1244()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2305,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2306,3)
+   <Peeled, Distributed chunk1>
+      remark #15542: loop was not vectorized: inner loop was already vectorized
+
+      LOOP BEGIN at tsc.c(2306,3)
+      <Peeled, Distributed chunk1>
+         remark #15301: PARTIAL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2306,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk1>
+         remark #15335: remainder loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2306,3)
+      <Peeled, Distributed chunk2>
+         remark #15301: PARTIAL LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2306,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk2>
+         remark #15301: REMAINDER LOOP WAS VECTORIZED
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2306,3)
+      <Peeled, Remainder loop for vectorization, Distributed chunk2>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s2244()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2331,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2332,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2332,3)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2332,3)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s251()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2360,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2361,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s1251()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2387,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2388,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s2251()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2414,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2416,3)
+   <Distributed chunk1>
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between s (2417:4) and s (2418:4)
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2416,3)
+   <Distributed chunk2>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s3251()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2441,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2442,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2442,3)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2442,3)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s252()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2471,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between b[i] (2474:4) and cc (2478:3)
+
+   LOOP BEGIN at tsc.c(2473,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between t (2475:4) and t (2476:4)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s253()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2503,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2504,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s254()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2535,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2537,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2537,3)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2537,3)
+   <Peeled loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s255()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2565,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between b[31999] (2566:3) and cc (2573:3)
+
+   LOOP BEGIN at tsc.c(2568,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between x (2569:4) and x (2571:4)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s256()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2596,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[j] (2599:5) and cc (2603:3)
+
+   LOOP BEGIN at tsc.c(2597,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between a[j] (2599:5) and a[j] (2600:5)
+
+      LOOP BEGIN at tsc.c(2598,4)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between a[j] (2599:5) and a[j-1] (2599:5)
+      LOOP END
+
+      LOOP BEGIN at tsc.c(2598,4)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s257()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2626,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (2629:5) and cc (2633:3)
+
+   LOOP BEGIN at tsc.c(2627,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between a[i] (2629:5) and a[i-1] (2629:5)
+
+      LOOP BEGIN at tsc.c(2628,4)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between a[i] (2629:5) and a[i] (2630:5)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s258()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2655,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between d[i] (2659:5) and cc (2664:3)
+
+   LOOP BEGIN at tsc.c(2657,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between s (2659:5) and s (2661:4)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s261()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2688,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2689,3)
+   <Distributed chunk1>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2689,3)
+   <Remainder loop for vectorization, Distributed chunk1>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2689,3)
+   <Peeled loop for vectorization, Distributed chunk2>
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2689,3)
+   <Distributed chunk2>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2689,3)
+   <Remainder loop for vectorization, Distributed chunk2>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2689,3)
+   <Peeled loop for vectorization, Distributed chunk1>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s271()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2716,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2717,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s272(float)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2745,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2746,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s273()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2775,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2776,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s274()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2805,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2806,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s275()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2837,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2840,5)
+      remark #15542: loop was not vectorized: inner loop was already vectorized   [ tsc.c(2840,5) ]
+
+      LOOP BEGIN at tsc.c(2838,3)
+         remark #15301: PERMUTED LOOP WAS VECTORIZED
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s2275()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2865,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2867,4)
+   <Distributed chunk1>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(2866,3)
+   <Distributed chunk2>
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s276()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2896,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2897,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s277()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2926,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (2934:5) and cc (2940:3)
+
+   LOOP BEGIN at tsc.c(2927,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between b[i+1] (2936:5) and b[i] (2931:5)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s278()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2963,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2964,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s279()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(2998,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(2999,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s1279()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3035,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3036,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s2710(float)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3066,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3067,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s2711()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3106,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3107,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s2712()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3135,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3136,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s281()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3166,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between a[i+31999] (3168:4) and cc (3172:3)
+
+   LOOP BEGIN at tsc.c(3167,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between a[i+31999] (3168:4) and a[i] (3169:4)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s1281()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3195,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3196,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s291()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3225,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3227,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3227,3)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3227,3)
+   <Peeled loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s292()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3256,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3259,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3259,3)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3259,3)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s2101()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3314,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between aa[i][i] (3316:4) and cc (3318:3)
+
+   LOOP BEGIN at tsc.c(3315,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s2102()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3341,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between aa[j][i] (3343:4) and cc (3348:3)
+
+   LOOP BEGIN at tsc.c(3343,4)
+   <Distributed chunk1>
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3342,3)
+   <Distributed chunk2>
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s2111()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3369,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between aa[j][i] (3372:5) and cc (3375:3)
+
+   LOOP BEGIN at tsc.c(3370,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between aa[j][i] (3372:5) and aa[j-1][i] (3372:5)
+
+      LOOP BEGIN at tsc.c(3371,4)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed FLOW dependence between aa[j][i] (3372:5) and aa[j][i-1] (3372:5)
+      LOOP END
+
+      LOOP BEGIN at tsc.c(3371,4)
+      <Remainder>
+      LOOP END
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(3381,2)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: s31111()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3446,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between a (3449:10) and cc (3456:3)
+
+   LOOP BEGIN at tsc.c(3428,3) inlined into tsc.c(3448,10)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3428,3) inlined into tsc.c(3449,10)
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3428,3) inlined into tsc.c(3450,10)
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3428,3) inlined into tsc.c(3451,10)
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3428,3) inlined into tsc.c(3452,10)
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3428,3) inlined into tsc.c(3453,10)
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3428,3) inlined into tsc.c(3454,10)
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3428,3) inlined into tsc.c(3455,10)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s313()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3509,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3511,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s315()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3568,2)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(3574,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3577,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s318(int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3674,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3679,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3679,3)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s319()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3714,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3716,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s3110()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3749,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between aa[0][0] (3750:3) and cc (3763:3)
+
+   LOOP BEGIN at tsc.c(3753,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between max (3755:5) and max (3756:6)
+
+      LOOP BEGIN at tsc.c(3754,4)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between max (3755:5) and max (3756:6)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s13110()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3787,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3791,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s3111()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3824,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3826,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s3112()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3856,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between a[i] (3859:4) and cc (3862:3)
+
+   LOOP BEGIN at tsc.c(3858,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between sum (3859:4) and sum (3859:4)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s3113()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3887,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3889,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s321()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3918,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (3920:4) and cc (3922:3)
+
+   LOOP BEGIN at tsc.c(3919,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between a[i] (3920:4) and a[i-1] (3920:4)
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3919,3)
+   <Remainder>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s322()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3945,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (3947:4) and cc (3949:3)
+
+   LOOP BEGIN at tsc.c(3946,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between a[i] (3947:4) and a[i-1] (3947:4)
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3946,3)
+   <Remainder>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s323()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3972,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (3974:4) and cc (3977:3)
+
+   LOOP BEGIN at tsc.c(3973,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between b[i] (3975:4) and b[i-1] (3974:4)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s331()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4002,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4004,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(4000,2)
+      remark #25460: No loop optimizations reported
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s332(float)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4044,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between a[i] (4050:5) and cc (4056:3)
+
+   LOOP BEGIN at tsc.c(4047,3)
+      remark #15520: loop was not vectorized: loop with multiple exits cannot be vectorized unless it meets search loop idiom criteria   [ tsc.c(4048,4) ]
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s341()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4083,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[j] (4088:5) and cc (4091:3)
+
+   LOOP BEGIN at tsc.c(4085,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between j (4087:5) and j (4087:5)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s342()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4116,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (4121:5) and cc (4124:3)
+
+   LOOP BEGIN at tsc.c(4118,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between j (4120:5) and j (4120:5)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s343()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4149,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between array[k] (4155:6) and cc (4159:3)
+
+   LOOP BEGIN at tsc.c(4151,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed OUTPUT dependence between array[k] (4155:6) and array[k] (4155:6)
+
+      LOOP BEGIN at tsc.c(4152,4)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+         remark #15346: vector dependence: assumed ANTI dependence between k (4154:6) and k (4154:6)
+      LOOP END
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s351()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4183,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4184,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s1351()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4211,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4215,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s352()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4245,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between a[i] (4248:4) and cc (4251:3)
+
+   LOOP BEGIN at tsc.c(4247,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s353(int *__restrict__)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4277,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (4279:4) and cc (4285:3)
+
+   LOOP BEGIN at tsc.c(4278,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s421()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(4309,2)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(4309,2)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(4309,2)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(4309,2)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(4315,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between xx[i] (4318:4) and cc (4320:3)
+
+   LOOP BEGIN at tsc.c(4317,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between xx[i] (4318:4) and a[i] (4318:4)
+   LOOP END
+
+   LOOP BEGIN at tsc.c(4317,3)
+   <Remainder>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(4326,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between xx[i] (4327:3) and temp (4327:3)
+LOOP END
+===========================================================================
+
+Begin optimization report for: s1421()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(4339,2)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(4339,2)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(4339,2)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(4339,2)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(4345,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4346,3)
+   <Multiversioned v1>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(4346,3)
+   <Multiversioned v2>
+      remark #15304: loop was not vectorized: non-vectorizable loop instance from multiversioning
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(4355,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between xx[i] (4356:3) and temp (4356:3)
+LOOP END
+===========================================================================
+
+Begin optimization report for: s422()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(4372,2)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at tsc.c(4379,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4380,3)
+   <Multiversioned v1>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(4380,3)
+   <Multiversioned v2>
+      remark #15304: loop was not vectorized: non-vectorizable loop instance from multiversioning
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(4389,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between xx[i] (4390:3) and temp (4390:3)
+LOOP END
+===========================================================================
+
+Begin optimization report for: s423()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(4406,2)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(4410,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4411,3)
+   <Multiversioned v1>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(4411,3)
+   <Remainder loop for vectorization, Multiversioned v1>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(4411,3)
+   <Multiversioned v2>
+      remark #15304: loop was not vectorized: non-vectorizable loop instance from multiversioning
+   LOOP END
+
+   LOOP BEGIN at tsc.c(4411,3)
+   <Remainder, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at tsc.c(4411,3)
+   <Remainder loop for vectorization, Multiversioned v1>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(4421,2)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: s424()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(4439,2)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at tsc.c(4444,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4445,3)
+   <Multiversioned v1>
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(4445,3)
+   <Remainder loop for vectorization, Multiversioned v1>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(4445,3)
+   <Multiversioned v2>
+      remark #15304: loop was not vectorized: non-vectorizable loop instance from multiversioning
+   LOOP END
+
+   LOOP BEGIN at tsc.c(4445,3)
+   <Remainder, Multiversioned v2>
+   LOOP END
+
+   LOOP BEGIN at tsc.c(4445,3)
+   <Remainder loop for vectorization, Multiversioned v1>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(4454,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between xx[i] (4455:3) and temp (4455:3)
+LOOP END
+===========================================================================
+
+Begin optimization report for: s431()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4478,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4479,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s441()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4505,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4506,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s442()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4538,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4539,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s443()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4583,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4584,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s451()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4621,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4622,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s452()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4648,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4649,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s471()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(91,3) inlined into tsc.c(4697,2)
+   remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+LOOP END
+
+LOOP BEGIN at tsc.c(4704,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4705,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(4716,2)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: s481()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4737,2)
+   remark #15520: loop was not vectorized: loop with multiple exits cannot be vectorized unless it meets search loop idiom criteria   [ tsc.c(4740,5) ]
+
+   LOOP BEGIN at tsc.c(4738,3)
+      remark #15520: loop was not vectorized: loop with multiple exits cannot be vectorized unless it meets search loop idiom criteria   [ tsc.c(4740,5) ]
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s482()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4768,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (4770:4) and cc (4773:3)
+
+   LOOP BEGIN at tsc.c(4769,3)
+      remark #15520: loop was not vectorized: loop with multiple exits cannot be vectorized unless it meets search loop idiom criteria   [ tsc.c(4771,4) ]
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s491(int *__restrict__)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4802,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[*(ip+i*4)] (4804:4) and cc (4806:3)
+
+   LOOP BEGIN at tsc.c(4803,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s4112(int *__restrict__, float)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4829,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (4831:4) and cc (4833:3)
+
+   LOOP BEGIN at tsc.c(4830,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s4113(int *__restrict__)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4857,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[*(ip+i*4)] (4859:4) and cc (4861:3)
+
+   LOOP BEGIN at tsc.c(4858,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s4114(int *, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4886,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (4889:4) and cc (4892:3)
+
+   LOOP BEGIN at tsc.c(4887,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at tsc.c(4887,3)
+   <Remainder>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s4115(int *__restrict__)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4917,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between a[i] (4920:4) and cc (4922:3)
+
+   LOOP BEGIN at tsc.c(4919,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s4116(int *__restrict__, int, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4949,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between a[inc+i] (4953:4) and cc (4955:3)
+
+   LOOP BEGIN at tsc.c(4951,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at tsc.c(4951,3)
+   <Remainder>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s4117()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4979,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (4981:4) and cc (4983:3)
+
+   LOOP BEGIN at tsc.c(4980,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s4121()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(5006,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5007,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: vbor()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(5368,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5369,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(5391,2)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: set1d(float *, float, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(83,3)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(83,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(83,3)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(83,3)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(87,3)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(87,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(87,3)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(87,3)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(91,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+===========================================================================
+
+Begin optimization report for: set1ds(int, float *, float, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(101,3)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(101,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(101,3)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(101,3)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(105,3)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(105,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(105,3)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(105,3)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(109,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+===========================================================================
+
+Begin optimization report for: set2d(float (*)[256], float, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(122,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(123,4)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(128,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(129,4)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+
+LOOP BEGIN at tsc.c(134,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+
+   LOOP BEGIN at tsc.c(135,4)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: sum1d(float *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(145,2)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(145,2)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(145,2)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(145,2)
+<Remainder loop for vectorization>
+LOOP END
+===========================================================================
+
+Begin optimization report for: s000()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(786,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(787,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s111()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(814,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (817:4) and cc (819:3)
+
+   LOOP BEGIN at tsc.c(816,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s112()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(866,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i+1] (869:4) and cc (871:3)
+
+   LOOP BEGIN at tsc.c(868,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+
+   LOOP BEGIN at tsc.c(868,3)
+   <Remainder>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s1112()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(893,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(894,3)
+      remark #15301: REVERSED LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s113()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(921,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(922,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(922,3)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(922,3)
+   <Peeled loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s1113()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(946,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (948:4) and cc (950:3)
+
+   LOOP BEGIN at tsc.c(947,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed FLOW dependence between a[i] (948:4) and a[16000] (948:4)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s151s(float *, float *, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1516,2)
+<Peeled loop for vectorization, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at tsc.c(1516,2)
+<Multiversioned v1>
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(1516,2)
+<Alternate Alignment Vectorized Loop, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at tsc.c(1516,2)
+<Remainder loop for vectorization, Multiversioned v1>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(1516,2)
+<Remainder loop for vectorization, Multiversioned v1>
+LOOP END
+
+LOOP BEGIN at tsc.c(1516,2)
+<Multiversioned v2>
+   remark #15304: loop was not vectorized: non-vectorizable loop instance from multiversioning
+LOOP END
+
+LOOP BEGIN at tsc.c(1516,2)
+<Remainder, Multiversioned v2>
+LOOP END
+===========================================================================
+
+Begin optimization report for: s174(int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1767,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1768,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1768,3)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1768,3)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s1221()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(1963,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(1964,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(1964,3)
+   <Remainder loop for vectorization>
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s293()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3286,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (3288:4) and cc (3290:3)
+
+   LOOP BEGIN at tsc.c(3287,3)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      remark #15346: vector dependence: assumed ANTI dependence between a[0] (3288:4) and a[i] (3288:4)
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s311()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3411,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3413,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: test(float *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3428,3)
+   remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+LOOP END
+===========================================================================
+
+Begin optimization report for: s312()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3480,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3482,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s314()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3539,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3541,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s316()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3609,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3611,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3611,3)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at tsc.c(3611,3)
+   <Remainder loop for vectorization>
+      remark #15335: remainder loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s317()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(3642,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(3644,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: s453()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(4675,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(4677,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: va()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(5032,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed ANTI dependence between b[i] (5033:3) and cc (5036:3)
+
+   LOOP BEGIN at tsc.c(5033,3)
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: vag(int *__restrict__)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(5060,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[i] (5062:4) and cc (5064:3)
+
+   LOOP BEGIN at tsc.c(5061,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: vas(int *__restrict__)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(5088,2)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+   remark #15346: vector dependence: assumed OUTPUT dependence between a[*(ip+i*4)] (5090:4) and cc (5092:3)
+
+   LOOP BEGIN at tsc.c(5089,3)
+      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: vif()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(5115,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5116,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: vpv()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(5144,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5145,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: vtv()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(5172,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5173,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: vpvtv()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(5199,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5200,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: vpvts(float)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(5226,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5227,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: vpvpv()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(5253,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5254,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: vtvtv()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(5280,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5281,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: vsumr()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(5308,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5310,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: vdotr()
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(5337,2)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(5339,3)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: set1d..0(float *, float, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(91,3)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(91,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(91,3)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(91,3)
+<Remainder loop for vectorization>
+LOOP END
+===========================================================================
+
+Begin optimization report for: set1d..1(float *, float, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(83,3)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(83,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(83,3)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(83,3)
+<Remainder loop for vectorization>
+LOOP END
+===========================================================================
+
+Begin optimization report for: set1d..2(float *, float, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(87,3)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(87,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(87,3)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(87,3)
+<Remainder loop for vectorization>
+LOOP END
+===========================================================================
+
+Begin optimization report for: set2d..0(float (*)[256], float, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(122,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(123,4)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: set2d..1(float (*)[256], float, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(134,3)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(134,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(134,3)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(134,3)
+<Remainder loop for vectorization>
+LOOP END
+===========================================================================
+
+Begin optimization report for: set2d..2(float (*)[256], float, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(128,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at tsc.c(129,4)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+LOOP END
+===========================================================================
+
+Begin optimization report for: set1ds..0(int, float *, float, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(109,3)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(109,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(109,3)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(109,3)
+<Remainder loop for vectorization>
+LOOP END
+===========================================================================
+
+Begin optimization report for: set1ds..1(int, float *, float, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(109,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: set1ds..2(int, float *, float, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(101,3)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at tsc.c(101,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(101,3)
+<Remainder loop for vectorization>
+   remark #15301: REMAINDER LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at tsc.c(101,3)
+<Remainder loop for vectorization>
+LOOP END
+===========================================================================
+
+Begin optimization report for: init(char *)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at tsc.c(224,4)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================

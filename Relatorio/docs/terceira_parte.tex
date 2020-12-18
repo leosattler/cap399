@@ -1,0 +1,54 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{CONCLUSÕES}
+\label{chp:3}
+
+\vspace{4mm}
+\textbf{Conclusões da Seção I}\vspace{6mm}\\
+A partir dos resultados apresentados na Seção \ref{chp:1}, conclui-se sobre a performance individual dos compiladores:
+\begin{itemize}
+\item Os tempos médios (Figura \ref{fig:a}) e totais (Tabela \ref{tab:d}) das versões vetorizada e não-vetorizada foram menores para o compilador \texttt{ICC}. Apesar dessa performance superior no geral, ele obteve um \textit{Speedup} médio intermediário (Tabela \ref{tab:c}); este foi o compilador que vetorizou o maior número de loops (Tabela \ref{tab:e}).
+%
+\item O \textit{Speedup} médio do compilador \texttt{PGI} foi o maior dentre os compiladores testados; enquanto seus tempos totais se aproximam dos valores do compilador \texttt{ICC} (Tabela \ref{tab:d}), seu número de loops vetorizados e não-vetorizados é comparável ao do \texttt{GCC} (Tabela \ref{tab:e}).
+%
+\item Conforme indicado pela alta assimetria e curtose dos tempos obtidos com o \texttt{GCC}, a performance geral deste compilador foi penalizada pela presença de um loop que durou acima de 20 segundos (Figura \ref{fig:a}, plot da direita); este foi o compilador com menor \textit{Speedup} médio e piores tempos totais.
+\end{itemize}
+
+Sobre a capacidade de vetorização dos três compiladores, o diagrama de Venn da Figura \ref{fig:f} revela que:
+\begin{itemize}
+\item \texttt{ICC} foi o compilador que exclusivamente vetorizou o maior número de loops: 27 ($17.9\%$ do total), contra 4 ($2.6\%$ do total) tanto do \texttt{PGI} quanto do \texttt{GCC}.
+\item Somente 10 loops foram vetorizados por todos os compiladores, ou seja, $6.6\%$ dos 151 loops de teste;
+\item 45 loops não foram vetorizados por nenhum compilador, representando $29.8\%$ dos loops de teste.
+\end{itemize}
+
+\textbf{Conclusões da Seção II}\vspace{6mm}\\
+Com relação aos resutados obtidos na Seção \ref{chp:2}, destaca-se:
+\begin{itemize}
+\item \texttt{ICC} teve somente sua flag de vetorização alterada; \texttt{PGI} teve tanto sua flag de otimização base quanto a de vetorização alteradas; \texttt{GCC} teve somente sua flag de otimização base alterada (ver Tabela \ref{tab:2_flags}).
+%
+\item Todos os compiladores aumentaram seus \textit{Speedups} médios; dito isto, \texttt{GCC} foi o compilador que apresentou a maior alteração nos resultados; de fato, seu \textit{Speedup} médio superou o do \texttt{ICC} (Tabela \ref{tab:2_spedups}) e seu número de loops vetorizados superou o do \texttt{PGI} (Tabela \ref{tab:2_nloops}).
+%
+\item A nova flag de otimização base utilizada para o compilador \texttt{GCC} melhorou a performance da versão não-vetorizada (redução de $-1.9\%$ do tempo total), enquanto ofereceu um ganho ainda maior para a versão vetorizada (redução de $-34.7\%$ do tempo total), conforme mostra a Tabela \ref{tab:2_tempos}; a Figura \ref{fig:2_hist}, plot da direita, indica que a assimetria e a curtose diminuíram significativamente com a eliminação da amostra com mais de 20 segundos na versão vetorizada.
+%
+\item \texttt{PGI} foi o compilador que obteve o menor número de novos loops vetorizados: +2, contra +4 do \texttt{ICC} e +16 do \texttt{GCC} (Tabela \ref{tab:2_nloops}).
+%
+\item Mesmo o \texttt{ICC} apresentando a melhora menos significativa de \textit{Speedup} médio, obtendo $+1.1\%$ contra $+2.1\%$ do \texttt{PGI} e $+39.7\%$ do \texttt{GCC} (Tabela \ref{tab:2_spedups}), ele permaneceu como o compilador com menores tempos tanto na versão vetorizada quanto na versão não-vetorizada (Figura \ref{fig:2_hist} e Tabela \ref{tab:2_tempos}). 
+%
+\item O número de loops vetorizados por todos os compiladores subiu de 10 para 24, que representa $15.8\%$ do total. 
+%
+\item O número de loops não vetorizados por nenhum compilador caiu de 45 para 40, representando agora $26.8\%$ do total. A interseção destes dois conjuntos é igual a 39, ou seja, os compiladores não foram capazes de vetorizar 39 loops em nenhum dos casos.
+\end{itemize}
+%\begin{figure}[ht!]
+%	\caption{Caption: figure example.}
+%	\vspace{0mm}	% acrescentar o espaçamento vertical apropriado entre o título e a borda superior da figura
+%	\begin{center}
+%		\resizebox{13cm}{!}{\includegraphics{Figuras/jpg_omni2_daily_wSxReptBqw.jpg}}		
+%	\end{center}
+%	\vspace{-2mm}	% acrescentar o espaçamento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando não há legenda (o valor pode ser negativo para subir)
+%	\legenda{Legend.}	% legenda - para deixar sem legenda usar comando \legenda{} (nunca deve-se comentar o comando \legenda)
+%	\label{figfiltrotS0681200}
+%	\FONTE{FOnte da imagem (se necessário).}	% fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor)
+%\end{figure}
+
+
+

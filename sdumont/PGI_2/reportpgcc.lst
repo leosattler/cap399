@@ -1,0 +1,1885 @@
+
+WARNING: Your license to use PGI Community Edition version 19.4 has expired.
+Please obtain a new version at http://www.pgroup.com/community or
+contact PGI Sales at sales@pgroup.com to obtain a perpetual license.
+
+set1d:
+     83, Loop not vectorized: may not be beneficial
+         Loop unrolled 4 times
+     87, Loop not vectorized: may not be beneficial
+         Loop unrolled 4 times
+     91, Loop not vectorized/parallelized: not countable
+set1ds:
+    101, Loop not vectorized: may not be beneficial
+         Loop unrolled 4 times
+    105, Loop not vectorized: may not be beneficial
+         Loop unrolled 4 times
+    109, Loop not vectorized/parallelized: not countable
+set2d:
+    123, Memory set idiom, loop replaced by call to __c_mset4
+    129, Memory set idiom, loop replaced by call to __c_mset4
+    135, Loop not vectorized/parallelized: not countable
+sum1d:
+    145, Generated vector simd code for the loop containing reductions
+check:
+    167, Generated vector simd code for the loop containing reductions
+    178, Generated vector simd code for the loop containing reductions
+    186, Generated vector simd code for the loop containing reductions
+init:
+    224, Generated vector simd code for the loop
+    232, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    233, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    234, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    235, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    236, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    238, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    239, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    241, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    242, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    244, set2d inlined, size=24 (inline) file tsc.c (117)
+         123, Memory set idiom, loop replaced by call to __c_mset4
+    245, set2d inlined, size=24 (inline) file tsc.c (117)
+         129, Memory set idiom, loop replaced by call to __c_mset4
+    247, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    248, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    249, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    250, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    252, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    254, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    255, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    257, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    258, set2d inlined, size=24 (inline) file tsc.c (117)
+         129, Memory set idiom, loop replaced by call to __c_mset4
+    260, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    261, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    263, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    264, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    266, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    267, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    268, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    269, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    270, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    272, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    273, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    274, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    275, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    276, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    278, set1ds inlined, size=16 (inline) file tsc.c (99)
+         109, Memory zero idiom, loop replaced by call to __c_mzero4
+    279, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    280, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    281, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    283, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    284, set1ds inlined, size=16 (inline) file tsc.c (99)
+         101, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    285, set2d inlined, size=24 (inline) file tsc.c (117)
+         123, Memory set idiom, loop replaced by call to __c_mset4
+    287, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    288, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    289, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    290, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    291, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    293, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    294, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    295, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    296, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    298, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    299, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    301, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    302, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    303, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    305, set1ds inlined, size=16 (inline) file tsc.c (99)
+         109, Memory set idiom, loop replaced by call to __c_mset4
+    306, set2d inlined, size=24 (inline) file tsc.c (117)
+         129, Memory set idiom, loop replaced by call to __c_mset4
+    308, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    309, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    311, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    312, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    313, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    314, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    315, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    317, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    318, set1ds inlined, size=16 (inline) file tsc.c (99)
+         109, Loop unrolled 8 times
+    319, set1ds inlined, size=16 (inline) file tsc.c (99)
+         109, Loop unrolled 8 times
+    320, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    321, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    322, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    324, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    325, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    326, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    328, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    329, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    331, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    332, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    334, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    335, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    337, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    338, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    340, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    341, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    343, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    344, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    345, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    347, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    348, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    349, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    350, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    351, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    353, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    354, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    355, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    356, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    358, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    359, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    360, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    361, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    363, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    364, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    365, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    367, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    368, set2d inlined, size=24 (inline) file tsc.c (117)
+         129, Memory set idiom, loop replaced by call to __c_mset4
+    370, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    371, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory zero idiom, loop replaced by call to __c_mzero4
+    373, set2d inlined, size=24 (inline) file tsc.c (117)
+         123, Memory set idiom, loop replaced by call to __c_mset4
+    374, set2d inlined, size=24 (inline) file tsc.c (117)
+         123, Memory set idiom, loop replaced by call to __c_mset4
+    375, set2d inlined, size=24 (inline) file tsc.c (117)
+         123, Memory set idiom, loop replaced by call to __c_mset4
+    377, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    378, set2d inlined, size=24 (inline) file tsc.c (117)
+         123, Memory set idiom, loop replaced by call to __c_mset4
+    379, set2d inlined, size=24 (inline) file tsc.c (117)
+         123, Memory set idiom, loop replaced by call to __c_mset4
+    381, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    382, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    383, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    384, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    385, set2d inlined, size=24 (inline) file tsc.c (117)
+         129, Memory set idiom, loop replaced by call to __c_mset4
+    387, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    388, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    389, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    390, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    392, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    393, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    394, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    395, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    397, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    398, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    399, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    400, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    401, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    403, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    404, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    405, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    406, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    408, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    409, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    410, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    411, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    412, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    414, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    415, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    416, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    418, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    419, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    420, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    421, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    423, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    424, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    426, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    427, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    429, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    430, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    431, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    433, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    434, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    435, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    437, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    438, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    439, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    440, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    441, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    442, set2d inlined, size=24 (inline) file tsc.c (117)
+         123, Memory set idiom, loop replaced by call to __c_mset4
+    444, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    445, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    446, set1d inlined, size=16 (inline) file tsc.c (81)
+          87, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    447, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    449, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    450, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    451, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    453, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    454, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    455, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    456, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    457, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    459, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    460, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    461, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    462, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    463, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    465, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+    466, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    467, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    468, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    469, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    471, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    472, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    473, set2d inlined, size=24 (inline) file tsc.c (117)
+         135, Memory set idiom, loop replaced by call to __c_mset4
+    475, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    476, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    477, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    478, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    480, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    481, set1ds inlined, size=16 (inline) file tsc.c (99)
+         109, Memory set idiom, loop replaced by call to __c_mset4
+    482, set1ds inlined, size=16 (inline) file tsc.c (99)
+         109, Memory set idiom, loop replaced by call to __c_mset4
+    483, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    484, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    485, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    487, set1ds inlined, size=16 (inline) file tsc.c (99)
+         109, Memory set idiom, loop replaced by call to __c_mset4
+    488, set1ds inlined, size=16 (inline) file tsc.c (99)
+         109, Memory set idiom, loop replaced by call to __c_mset4
+    489, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    490, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    491, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    492, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+    494, set1ds inlined, size=16 (inline) file tsc.c (99)
+         109, Memory set idiom, loop replaced by call to __c_mset4
+    495, set1ds inlined, size=16 (inline) file tsc.c (99)
+         109, Memory set idiom, loop replaced by call to __c_mset4
+    497, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+    498, set1d inlined, size=16 (inline) file tsc.c (81)
+          83, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+s000:
+    786, Loop not vectorized/parallelized: contains call
+    787, Generated vector simd code for the loop
+    797, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s111:
+    814, Loop not vectorized/parallelized: contains call
+    816, Loop unrolled 8 times
+    824, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s1111:
+    838, Loop not vectorized/parallelized: contains call
+    839, Loop unrolled 2 times
+    848, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s112:
+    866, Loop not vectorized/parallelized: contains call
+    868, Loop unrolled 8 times
+    876, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s1112:
+    893, Loop not vectorized/parallelized: contains call
+    894, Loop unrolled 8 times
+    903, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s113:
+    921, Loop not vectorized/parallelized: contains call
+    922, Loop unrolled 8 times
+    930, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s1113:
+    946, Loop not vectorized/parallelized: contains call
+    947, Loop not vectorized: data dependency
+         Loop unrolled 8 times
+    955, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s114:
+    974, Loop not vectorized/parallelized: contains call
+    976, Loop unrolled 8 times
+    986, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s115:
+   1004, Loop not vectorized/parallelized: contains call
+   1006, Loop unrolled 4 times
+   1015, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s1115:
+   1031, Loop not vectorized/parallelized: contains call
+   1033, Loop unrolled 4 times
+   1042, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s116:
+   1059, Loop not vectorized/parallelized: contains call
+   1060, Loop not vectorized: data dependency
+         Loop unrolled 2 times
+   1072, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s118:
+   1090, Loop not vectorized/parallelized: contains call
+   1092, Loop unrolled 4 times
+   1101, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s119:
+   1119, Loop not vectorized/parallelized: contains call
+   1121, Generated vector simd code for the loop
+         Residual loop unrolled 7 times (completely unrolled)
+   1132, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s1119:
+   1148, Loop not vectorized/parallelized: contains call
+   1150, Generated vector simd code for the loop
+   1161, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s121:
+   1180, Loop not vectorized/parallelized: contains call
+   1181, Generated vector simd code for the loop
+         Residual loop unrolled 7 times (completely unrolled)
+   1190, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s122:
+   1213, Loop not vectorized/parallelized: not countable
+   1222, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s123:
+   1242, Loop not vectorized/parallelized: contains call
+   1244, Loop not vectorized: data dependency
+   1257, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s124:
+   1276, Loop not vectorized/parallelized: contains call
+   1278, Loop not vectorized: data dependency
+   1292, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s125:
+   1310, Loop not vectorized/parallelized: contains call
+   1313, Generated vector simd code for the loop
+   1323, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s126:
+   1341, Loop not vectorized/parallelized: contains call
+   1344, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   1355, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s127:
+   1374, Loop not vectorized/parallelized: contains call
+   1376, Loop unrolled 4 times
+   1387, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s128:
+   1407, Loop not vectorized/parallelized: contains call
+   1409, Loop not vectorized: data dependency
+         Loop unrolled 2 times
+   1420, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s131:
+   1438, Loop not vectorized/parallelized: contains call
+   1439, Generated vector simd code for the loop
+         Residual loop unrolled 7 times (completely unrolled)
+   1447, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s132:
+   1466, Loop not vectorized/parallelized: contains call
+   1467, Generated vector simd code for the loop
+         Residual loop unrolled 7 times (completely unrolled)
+   1475, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s141:
+   1495, Loop not vectorized/parallelized: contains call
+   1498, Loop not vectorized: data dependency
+         Loop unrolled 2 times
+   1508, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s151s:
+   1516, Loop not vectorized: data dependency
+         Loop unrolled 8 times
+s151:
+   1533, s151s inlined, size=7 (inline) file tsc.c (1515)
+        1516, Loop not vectorized: data dependency
+              Loop unrolled 8 times
+        1532, Loop not vectorized/parallelized: contains call
+   1539, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s152:
+   1562, Loop not vectorized/parallelized: contains call
+   1563, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   1565, s152s inlined, size=4 (inline) file tsc.c (1546)
+   1572, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s161:
+   1591, Loop not vectorized/parallelized: contains call
+   1592, Loop not vectorized: data dependency
+   1608, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s1161:
+   1625, Loop not vectorized/parallelized: contains call
+   1626, Generated vector simd code for the loop
+   1642, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s162:
+   1659, Loop not vectorized/parallelized: contains call
+   1661, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   1670, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s171:
+   1687, Loop not vectorized/parallelized: contains call
+   1688, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   1696, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s172:
+   1714, Loop not vectorized/parallelized: not countable
+   1722, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s173:
+   1740, Loop not vectorized/parallelized: contains call
+   1741, Generated vector simd code for the loop
+   1749, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s174:
+   1767, Loop not vectorized/parallelized: contains call
+   1768, Loop not vectorized: data dependency
+         Loop unrolled 8 times
+   1776, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s175:
+   1795, Loop not vectorized/parallelized: not countable
+   1803, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s176:
+   1823, Loop not vectorized/parallelized: contains call
+   1825, Generated vector simd code for the loop
+   1834, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s211:
+   1858, Loop not vectorized/parallelized: contains call
+   1859, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   1868, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s212:
+   1885, Loop not vectorized/parallelized: contains call
+   1886, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   1895, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s1213:
+   1910, Loop not vectorized/parallelized: contains call
+   1911, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   1920, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s221:
+   1938, Loop not vectorized/parallelized: contains call
+   1939, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   1948, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s1221:
+   1963, Loop not vectorized/parallelized: contains call
+   1964, Loop not vectorized: data dependency
+         Loop unrolled 8 times
+   1972, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s222:
+   1990, Loop not vectorized/parallelized: contains call
+   1991, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   2001, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s231:
+   2018, Loop not vectorized/parallelized: contains call
+   2019, Loop interchange produces reordered loop nest: 2020,2019
+         Generated vector simd code for the loop
+   2029, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s232:
+   2047, Loop not vectorized/parallelized: contains call
+   2049, Loop not vectorized: data dependency
+         Loop unrolled 8 times
+   2058, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s1232:
+   2074, Loop not vectorized/parallelized: contains call
+   2076, Loop unrolled 8 times
+   2085, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s233:
+   2103, Loop not vectorized/parallelized: contains call
+   2104, Loop distributed: 2 new loops
+         Loop interchange produces reordered loop nest: 2105,2104
+         Loop interchange produces reordered loop nest: 2108,2104
+         Generated vector simd code for the loop
+         Loop not vectorized: data dependency
+         Loop unrolled 8 times
+         Residual loop unrolled 7 times (completely unrolled)
+   2117, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s2233:
+   2133, Loop not vectorized/parallelized: contains call
+   2134, Loop distributed: 2 new loops
+         Loop interchange produces reordered loop nest: 2135,2134
+         Generated vector simd code for the loop
+         Residual loop unrolled 7 times (completely unrolled)
+   2138, Generated vector simd code for the loop
+         Residual loop unrolled 7 times (completely unrolled)
+   2147, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s235:
+   2164, Loop not vectorized/parallelized: contains call
+   2165, Loop distributed: 2 new loops
+         Loop interchange produces reordered loop nest: 2167,2165
+         Generated vector simd code for the loop
+   2176, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s241:
+   2194, Loop not vectorized/parallelized: contains call
+   2195, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   2204, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s242:
+   2222, Loop not vectorized/parallelized: contains call
+   2223, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   2231, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s243:
+   2249, Loop not vectorized/parallelized: contains call
+   2250, Loop not vectorized: data dependency
+         Loop unrolled 2 times
+   2260, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s244:
+   2278, Loop not vectorized/parallelized: contains call
+   2279, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   2289, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s1244:
+   2305, Loop not vectorized/parallelized: contains call
+   2306, Loop not vectorized: data dependency
+         Loop unrolled 2 times
+   2315, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s2244:
+   2331, Loop not vectorized/parallelized: contains call
+   2332, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   2341, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s251:
+   2360, Loop not vectorized/parallelized: contains call
+   2361, Generated vector simd code for the loop
+   2370, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s1251:
+   2387, Loop not vectorized/parallelized: contains call
+   2388, Generated vector simd code for the loop
+   2398, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s2251:
+   2414, Loop not vectorized/parallelized: contains call
+   2416, Loop unrolled 4 times
+   2426, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s3251:
+   2441, Loop not vectorized/parallelized: contains call
+   2442, Generated vector simd code for the loop
+         Residual loop unrolled 7 times (completely unrolled)
+   2452, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s252:
+   2471, Loop not vectorized/parallelized: contains call
+   2473, Loop unrolled 4 times
+   2483, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s253:
+   2503, Loop not vectorized/parallelized: contains call
+   2504, Generated vector simd code for the loop
+   2516, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s254:
+   2535, Loop not vectorized/parallelized: contains call
+   2537, Loop unrolled 8 times
+   2546, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s255:
+   2565, Loop not vectorized/parallelized: contains call
+   2568, Loop unrolled 4 times
+   2578, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s256:
+   2596, Loop not vectorized/parallelized: contains call
+   2598, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   2608, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s257:
+   2626, Loop not vectorized/parallelized: contains call
+   2628, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   2638, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s258:
+   2655, Loop not vectorized/parallelized: contains call
+   2669, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s261:
+   2688, Loop not vectorized/parallelized: contains call
+   2689, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   2700, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s271:
+   2716, Loop not vectorized/parallelized: contains call
+   2717, Generated vector simd code for the loop
+   2727, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s272:
+   2745, Loop not vectorized/parallelized: contains call
+   2746, Generated vector simd code for the loop
+   2757, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s273:
+   2775, Loop not vectorized/parallelized: contains call
+   2776, Generated vector simd code for the loop
+   2787, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s274:
+   2805, Loop not vectorized/parallelized: contains call
+   2806, Generated vector simd code for the loop
+   2819, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s275:
+   2837, Loop not vectorized/parallelized: contains call
+   2840, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   2850, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s2275:
+   2865, Loop not vectorized/parallelized: contains call
+   2866, Loop distributed: 2 new loops
+         Loop interchange produces reordered loop nest: 2867,2866
+         Generated vector simd code for the loop
+   2877, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s276:
+   2896, Loop not vectorized/parallelized: contains call
+   2897, Generated vector simd code for the loop
+   2909, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s277:
+   2926, Loop not vectorized/parallelized: contains call
+   2927, Loop not vectorized: data dependency
+   2945, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s278:
+   2963, Loop not vectorized/parallelized: contains call
+   2964, Generated vector simd code for the loop
+   2980, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s279:
+   2998, Loop not vectorized/parallelized: contains call
+   3019, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s1279:
+   3035, Loop not vectorized/parallelized: contains call
+   3048, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s2710:
+   3066, Loop not vectorized/parallelized: contains call
+   3067, Invariant if transformation
+         Generated vector simd code for the loop
+   3089, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s2711:
+   3106, Loop not vectorized/parallelized: contains call
+   3107, Generated vector simd code for the loop
+   3117, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s2712:
+   3135, Loop not vectorized/parallelized: contains call
+   3136, Generated vector simd code for the loop
+   3146, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s281:
+   3166, Loop not vectorized/parallelized: contains call
+   3167, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   3177, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s1281:
+   3195, Loop not vectorized/parallelized: contains call
+   3196, Generated vector simd code for the loop
+   3206, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s291:
+   3225, Loop not vectorized/parallelized: contains call
+   3227, Loop unrolled 2 times
+   3236, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s292:
+   3256, Loop not vectorized/parallelized: contains call
+   3269, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s293:
+   3286, Loop not vectorized/parallelized: contains call
+   3287, Loop not vectorized: data dependency
+         Loop unrolled 8 times
+   3295, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s2101:
+   3314, Loop not vectorized/parallelized: contains call
+   3315, Loop unrolled 4 times
+   3323, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s2102:
+   3341, Loop not vectorized/parallelized: contains call
+   3342, Loop distributed: 2 new loops
+         Loop interchange produces reordered loop nest: 3343,3342
+         Generated vector simd code for the loop
+         Loop unrolled 8 times
+   3353, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s2111:
+   3369, Loop not vectorized/parallelized: contains call
+   3371, Loop not vectorized: data dependency
+         Loop unrolled 8 times
+   3382, Generated vector simd code for the loop containing reductions
+   3385, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s311:
+   3411, Loop not vectorized/parallelized: contains call
+   3413, Generated vector simd code for the loop containing reductions
+   3421, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+test:
+   3428, Loop unrolled 4 times (completely unrolled)
+s31111:
+   3446, Loop not vectorized/parallelized: contains call
+   3448, test inlined, size=5 (inline) file tsc.c (3425)
+        3428, Loop unrolled 4 times (completely unrolled)
+   3449, test inlined, size=5 (inline) file tsc.c (3425)
+        3428, Loop unrolled 4 times (completely unrolled)
+   3450, test inlined, size=5 (inline) file tsc.c (3425)
+        3428, Loop unrolled 4 times (completely unrolled)
+   3451, test inlined, size=5 (inline) file tsc.c (3425)
+        3428, Loop unrolled 4 times (completely unrolled)
+   3452, test inlined, size=5 (inline) file tsc.c (3425)
+        3428, Loop unrolled 4 times (completely unrolled)
+   3453, test inlined, size=5 (inline) file tsc.c (3425)
+        3428, Loop unrolled 4 times (completely unrolled)
+   3454, test inlined, size=5 (inline) file tsc.c (3425)
+        3428, Loop unrolled 4 times (completely unrolled)
+   3455, test inlined, size=5 (inline) file tsc.c (3425)
+        3428, Loop unrolled 4 times (completely unrolled)
+   3461, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s312:
+   3480, Loop not vectorized/parallelized: contains call
+   3482, Generated vector simd code for the loop containing reductions
+   3491, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s313:
+   3509, Loop not vectorized/parallelized: contains call
+   3511, Generated vector simd code for the loop containing reductions
+   3520, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s314:
+   3539, Loop not vectorized/parallelized: contains call
+   3541, Generated vector simd code for the loop containing reductions
+   3552, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s315:
+   3568, Loop not vectorized: may not be beneficial
+         Loop unrolled 4 times
+   3574, Loop not vectorized/parallelized: contains call
+   3590, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s316:
+   3609, Loop not vectorized/parallelized: contains call
+   3611, Generated vector simd code for the loop containing reductions
+         Residual loop unrolled 7 times (completely unrolled)
+   3622, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s317:
+   3642, Loop not vectorized/parallelized: contains call
+   3644, Generated vector simd code for the loop containing reductions
+   3653, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s318:
+   3674, Loop not vectorized/parallelized: contains call
+   3695, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s319:
+   3714, Loop not vectorized/parallelized: contains call
+   3716, Loop unrolled 2 times
+   3728, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s3110:
+   3749, Loop not vectorized/parallelized: contains call
+   3769, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s13110:
+   3787, Loop not vectorized/parallelized: contains call
+   3792, Generated vector simd code for the loop containing reductions
+   3805, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s3111:
+   3824, Loop not vectorized/parallelized: contains call
+   3837, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s3112:
+   3856, Loop not vectorized/parallelized: contains call
+   3858, Loop unrolled 8 times
+   3868, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s3113:
+   3887, Loop not vectorized/parallelized: contains call
+   3889, Generated vector simd code for the loop containing reductions
+   3900, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s321:
+   3918, Loop not vectorized/parallelized: contains call
+   3919, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   3927, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s322:
+   3945, Loop not vectorized/parallelized: contains call
+   3946, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   3954, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s323:
+   3972, Loop not vectorized/parallelized: contains call
+   3973, Loop not vectorized: data dependency
+         Loop unrolled 4 times
+   3982, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s331:
+   4002, Loop not vectorized/parallelized: contains call
+   4016, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s332:
+   4047, Loop not vectorized/parallelized: potential early exits
+   4062, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s341:
+   4083, Loop not vectorized/parallelized: contains call
+   4096, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s342:
+   4116, Loop not vectorized/parallelized: contains call
+   4129, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s343:
+   4149, Loop not vectorized/parallelized: contains call
+   4164, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s351:
+   4183, Loop not vectorized/parallelized: contains call
+   4196, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s1351:
+   4211, Loop not vectorized/parallelized: contains call
+   4215, Generated vector simd code for the loop
+   4226, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s352:
+   4245, Loop not vectorized/parallelized: contains call
+   4257, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s353:
+   4277, Loop not vectorized/parallelized: contains call
+   4278, Loop not vectorized: non-stride-1 array reference
+   4290, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s421:
+   4309, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+   4315, Loop not vectorized/parallelized: contains call
+   4317, Generated vector simd code for the loop
+         Residual loop unrolled 7 times (completely unrolled)
+   4326, Generated vector simd code for the loop containing reductions
+   4329, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s1421:
+   4339, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+   4345, Loop not vectorized/parallelized: contains call
+   4346, Generated vector simd code for the loop
+   4355, Generated vector simd code for the loop containing reductions
+   4358, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s422:
+   4372, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+   4379, Loop not vectorized/parallelized: contains call
+   4380, Generated vector simd code for the loop
+   4389, Generated vector simd code for the loop containing reductions
+   4392, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s423:
+   4406, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+   4410, Loop not vectorized/parallelized: contains call
+   4411, Generated vector simd code for the loop
+         Residual loop unrolled 7 times (completely unrolled)
+   4421, Generated vector simd code for the loop containing reductions
+   4424, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s424:
+   4439, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+   4444, Loop not vectorized/parallelized: contains call
+   4445, Generated vector simd code for the loop
+         Residual loop unrolled 7 times (completely unrolled)
+   4454, Generated vector simd code for the loop containing reductions
+   4457, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s431:
+   4478, Loop not vectorized/parallelized: contains call
+   4479, Generated vector simd code for the loop
+   4487, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s441:
+   4505, Loop not vectorized/parallelized: contains call
+   4520, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s442:
+   4538, Loop not vectorized/parallelized: contains call
+   4565, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s443:
+   4583, Loop not vectorized/parallelized: contains call
+   4584, Generated vector simd code for the loop
+   4603, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s451:
+   4621, Loop not vectorized/parallelized: contains call
+   4622, Generated vector simd code for the loop
+   4630, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s452:
+   4648, Loop not vectorized/parallelized: contains call
+   4649, Generated vector simd code for the loop
+   4657, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s453:
+   4675, Loop not vectorized/parallelized: contains call
+   4677, Loop unrolled 8 times
+   4686, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s471:
+   4697, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory zero idiom, loop replaced by call to __c_mzero4
+   4704, Loop not vectorized/parallelized: contains call
+   4705, Generated vector simd code for the loop
+   4707, s471s inlined, size=1 (inline) file tsc.c (151)
+   4716, Generated vector simd code for the loop containing reductions
+   4719, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s481:
+   4738, Loop not vectorized/parallelized: contains call
+   4749, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s482:
+   4769, Loop not vectorized/parallelized: potential early exits
+   4778, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s491:
+   4802, Loop not vectorized/parallelized: contains call
+   4803, Loop not vectorized: non-stride-1 array reference
+         Loop unrolled 2 times
+   4811, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s4112:
+   4829, Loop not vectorized/parallelized: contains call
+   4830, Loop not vectorized: non-stride-1 array reference
+         Loop unrolled 2 times
+   4838, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s4113:
+   4857, Loop not vectorized/parallelized: contains call
+   4858, Loop not vectorized: non-stride-1 array reference
+         Loop unrolled 2 times
+   4866, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s4114:
+   4886, Loop not vectorized/parallelized: contains call
+   4887, Loop not vectorized: data dependency
+         Loop unrolled 2 times
+   4897, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s4115:
+   4917, Loop not vectorized/parallelized: contains call
+   4919, Loop not vectorized: non-stride-1 array reference
+         Loop unrolled 2 times
+   4928, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s4116:
+   4949, Loop not vectorized/parallelized: contains call
+   4951, Loop not vectorized: non-stride-1 array reference
+         Loop unrolled 2 times
+   4961, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s4117:
+   4979, Loop not vectorized/parallelized: contains call
+   4980, Loop not vectorized: non-stride-1 array reference
+         Loop unrolled 2 times
+   4988, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+s4121:
+   5006, Loop not vectorized/parallelized: contains call
+   5008, f inlined, size=2 (inline) file tsc.c (156)
+        5007, Generated vector simd code for the loop
+   5015, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+va:
+   5033, Memory copy idiom, loop replaced by call to __c_mcopy4
+   5041, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+vag:
+   5060, Loop not vectorized/parallelized: contains call
+   5061, Loop not vectorized: non-stride-1 array reference
+         Loop unrolled 2 times
+   5069, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+vas:
+   5088, Loop not vectorized/parallelized: contains call
+   5089, Loop not vectorized: non-stride-1 array reference
+         Loop unrolled 2 times
+   5097, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+vif:
+   5115, Loop not vectorized/parallelized: contains call
+   5116, Generated vector simd code for the loop
+   5126, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+vpv:
+   5144, Loop not vectorized/parallelized: contains call
+   5145, Generated vector simd code for the loop
+   5153, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+vtv:
+   5172, Loop not vectorized/parallelized: contains call
+   5173, Generated vector simd code for the loop
+   5181, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+vpvtv:
+   5199, Loop not vectorized/parallelized: contains call
+   5200, Generated vector simd code for the loop
+   5208, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+vpvts:
+   5226, Loop not vectorized/parallelized: contains call
+   5227, Generated vector simd code for the loop
+   5235, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+vpvpv:
+   5253, Loop not vectorized/parallelized: contains call
+   5254, Generated vector simd code for the loop
+   5262, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+vtvtv:
+   5280, Loop not vectorized/parallelized: contains call
+   5281, Generated vector simd code for the loop
+   5289, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+vsumr:
+   5308, Loop not vectorized/parallelized: contains call
+   5310, Generated vector simd code for the loop containing reductions
+   5318, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+vdotr:
+   5337, Loop not vectorized/parallelized: contains call
+   5339, Generated vector simd code for the loop containing reductions
+   5348, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+vbor:
+   5368, Loop not vectorized/parallelized: contains call
+   5369, Generated vector simd code for the loop
+   5391, Generated vector simd code for the loop containing reductions
+   5394, check inlined, size=64 (inline) file tsc.c (160)
+         167, Generated vector simd code for the loop containing reductions
+         178, Generated vector simd code for the loop containing reductions
+         186, Generated vector simd code for the loop containing reductions
+set:
+   5401, Loop not vectorized: data dependency
+         Loop unrolled 8 times
+   5410, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+   5411, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+   5412, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+   5413, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+   5414, set1d inlined, size=16 (inline) file tsc.c (81)
+          91, Memory set idiom, loop replaced by call to __c_mset4
+   5415, set2d inlined, size=24 (inline) file tsc.c (117)
+         123, Memory set idiom, loop replaced by call to __c_mset4
+   5416, set2d inlined, size=24 (inline) file tsc.c (117)
+         123, Memory set idiom, loop replaced by call to __c_mset4
+   5417, set2d inlined, size=24 (inline) file tsc.c (117)
+         123, Memory set idiom, loop replaced by call to __c_mset4
+   5419, Loop not vectorized: may not be beneficial
+         Loop unrolled 4 times
+main:
+   5432, set inlined, size=250 (inline) file tsc.c (5398)
+        5401, Loop not vectorized: data dependency
+              Loop unrolled 8 times
+        5410, set1d inlined, size=16 (inline) file tsc.c (81)
+        5410, Memory set idiom, loop replaced by call to __c_mset4
+        5411, Memory set idiom, loop replaced by call to __c_mset4
+        5412, Memory set idiom, loop replaced by call to __c_mset4
+        5413, Memory set idiom, loop replaced by call to __c_mset4
+        5414, Memory set idiom, loop replaced by call to __c_mset4
+        5415, Memory set idiom, loop replaced by call to __c_mset4
+        5416, Memory set idiom, loop replaced by call to __c_mset4
+        5417, Memory set idiom, loop replaced by call to __c_mset4
+        5419, Loop not vectorized: may not be beneficial
+              Loop unrolled 4 times
+   5435, s000 inlined, size=93 (inline) file tsc.c (775)
+         786, Loop not vectorized/parallelized: contains call
+         787, Generated vector simd code for the loop
+         797, check inlined, size=64 (inline) file tsc.c (160)
+         797, Generated vector simd code for the loop containing reductions
+   5436, s111 inlined, size=93 (inline) file tsc.c (803)
+         814, Loop not vectorized/parallelized: contains call
+         816, Loop unrolled 8 times
+         824, check inlined, size=64 (inline) file tsc.c (160)
+         824, Generated vector simd code for the loop containing reductions
+   5437, s1111 inlined, size=100 (inline) file tsc.c (829)
+         838, Loop not vectorized/parallelized: contains call
+         839, Loop unrolled 2 times
+         848, check inlined, size=64 (inline) file tsc.c (160)
+         848, Generated vector simd code for the loop containing reductions
+   5438, s112 inlined, size=93 (inline) file tsc.c (855)
+         866, Loop not vectorized/parallelized: contains call
+         868, Loop unrolled 8 times
+         876, check inlined, size=64 (inline) file tsc.c (160)
+         876, Generated vector simd code for the loop containing reductions
+   5439, s1112 inlined, size=93 (inline) file tsc.c (882)
+         893, Loop not vectorized/parallelized: contains call
+         894, Loop unrolled 8 times
+         903, check inlined, size=64 (inline) file tsc.c (160)
+         903, Generated vector simd code for the loop containing reductions
+   5440, s113 inlined, size=93 (inline) file tsc.c (910)
+         921, Loop not vectorized/parallelized: contains call
+         922, Loop unrolled 8 times
+         930, check inlined, size=64 (inline) file tsc.c (160)
+         930, Generated vector simd code for the loop containing reductions
+   5441, s1113 inlined, size=93 (inline) file tsc.c (935)
+         946, Loop not vectorized/parallelized: contains call
+         947, Loop not vectorized: data dependency
+              Loop unrolled 8 times
+         955, check inlined, size=64 (inline) file tsc.c (160)
+         955, Generated vector simd code for the loop containing reductions
+   5442, s114 inlined, size=97 (inline) file tsc.c (962)
+         974, Loop not vectorized/parallelized: contains call
+         976, Loop unrolled 8 times
+         986, check inlined, size=64 (inline) file tsc.c (160)
+         986, Generated vector simd code for the loop containing reductions
+   5443, s115 inlined, size=97 (inline) file tsc.c (993)
+        1004, Loop not vectorized/parallelized: contains call
+        1006, Loop unrolled 4 times
+        1015, check inlined, size=64 (inline) file tsc.c (160)
+        1015, Generated vector simd code for the loop containing reductions
+   5444, s1115 inlined, size=98 (inline) file tsc.c (1020)
+        1031, Loop not vectorized/parallelized: contains call
+        1033, Loop unrolled 4 times
+        1042, check inlined, size=64 (inline) file tsc.c (160)
+        1042, Generated vector simd code for the loop containing reductions
+   5445, s116 inlined, size=106 (inline) file tsc.c (1049)
+        1059, Loop not vectorized/parallelized: contains call
+        1060, Loop not vectorized: data dependency
+              Loop unrolled 2 times
+        1072, check inlined, size=64 (inline) file tsc.c (160)
+        1072, Generated vector simd code for the loop containing reductions
+   5446, s118 inlined, size=97 (inline) file tsc.c (1079)
+        1090, Loop not vectorized/parallelized: contains call
+        1092, Loop unrolled 4 times
+        1101, check inlined, size=64 (inline) file tsc.c (160)
+        1101, Generated vector simd code for the loop containing reductions
+   5447, s119 inlined, size=97 (inline) file tsc.c (1108)
+        1119, Loop not vectorized/parallelized: contains call
+        1121, Generated vector simd code for the loop
+              Residual loop unrolled 7 times (completely unrolled)
+        1132, check inlined, size=64 (inline) file tsc.c (160)
+        1132, Generated vector simd code for the loop containing reductions
+   5448, s1119 inlined, size=97 (inline) file tsc.c (1137)
+        1148, Loop not vectorized/parallelized: contains call
+        1150, Generated vector simd code for the loop
+        1161, check inlined, size=64 (inline) file tsc.c (160)
+        1161, Generated vector simd code for the loop containing reductions
+   5449, s121 inlined, size=94 (inline) file tsc.c (1168)
+        1180, Loop not vectorized/parallelized: contains call
+        1181, Generated vector simd code for the loop
+              Residual loop unrolled 7 times (completely unrolled)
+        1190, check inlined, size=64 (inline) file tsc.c (160)
+        1190, Generated vector simd code for the loop containing reductions
+   5450, s122 inlined, size=95 (inline) file tsc.c (1197)
+        1210, Loop not vectorized/parallelized: contains call
+        1213, Loop unrolled 4 times
+        1222, check inlined, size=64 (inline) file tsc.c (160)
+        1222, Generated vector simd code for the loop containing reductions
+   5451, s123 inlined, size=101 (inline) file tsc.c (1229)
+        1242, Loop not vectorized/parallelized: contains call
+        1244, Loop not vectorized: data dependency
+        1257, check inlined, size=64 (inline) file tsc.c (160)
+        1257, Generated vector simd code for the loop containing reductions
+   5452, s124 inlined, size=101 (inline) file tsc.c (1264)
+        1276, Loop not vectorized/parallelized: contains call
+        1278, Loop not vectorized: data dependency
+        1292, check inlined, size=64 (inline) file tsc.c (160)
+        1292, Generated vector simd code for the loop containing reductions
+   5453, s125 inlined, size=99 (inline) file tsc.c (1298)
+        1310, Loop not vectorized/parallelized: contains call
+        1313, Generated vector simd code for the loop
+        1323, check inlined, size=64 (inline) file tsc.c (160)
+        1323, Generated vector simd code for the loop containing reductions
+   5454, s126 inlined, size=100 (inline) file tsc.c (1329)
+        1341, Loop not vectorized/parallelized: contains call
+        1344, Loop not vectorized: data dependency
+              Loop unrolled 4 times
+        1355, check inlined, size=64 (inline) file tsc.c (160)
+        1355, Generated vector simd code for the loop containing reductions
+   5455, s127 inlined, size=99 (inline) file tsc.c (1362)
+        1374, Loop not vectorized/parallelized: contains call
+        1376, Loop unrolled 4 times
+        1387, check inlined, size=64 (inline) file tsc.c (160)
+        1387, Generated vector simd code for the loop containing reductions
+   5456, s128 inlined, size=97 (inline) file tsc.c (1394)
+        1407, Loop not vectorized/parallelized: contains call
+        1409, Loop not vectorized: data dependency
+              Loop unrolled 2 times
+        1420, check inlined, size=64 (inline) file tsc.c (160)
+        1420, Generated vector simd code for the loop containing reductions
+   5457, s131 inlined, size=94 (inline) file tsc.c (1427)
+        1438, Loop not vectorized/parallelized: contains call
+        1439, Generated vector simd code for the loop
+              Residual loop unrolled 7 times (completely unrolled)
+        1447, check inlined, size=64 (inline) file tsc.c (160)
+        1447, Generated vector simd code for the loop containing reductions
+   5458, s132 inlined, size=97 (inline) file tsc.c (1454)
+        1466, Loop not vectorized/parallelized: contains call
+        1467, Generated vector simd code for the loop
+              Residual loop unrolled 7 times (completely unrolled)
+        1475, check inlined, size=64 (inline) file tsc.c (160)
+        1475, Generated vector simd code for the loop containing reductions
+   5459, s141 inlined, size=99 (inline) file tsc.c (1482)
+        1495, Loop not vectorized/parallelized: contains call
+        1498, Loop not vectorized: data dependency
+              Loop unrolled 2 times
+        1508, check inlined, size=64 (inline) file tsc.c (160)
+        1508, Generated vector simd code for the loop containing reductions
+   5460, s151 inlined, size=99 (inline) file tsc.c (1523)
+        1532, Loop not vectorized/parallelized: contains call
+        1533, s151s inlined, size=7 (inline) file tsc.c (1515)
+        1533, Loop not vectorized: data dependency
+              Loop unrolled 8 times
+        1539, Generated vector simd code for the loop containing reductions
+   5461, s152 inlined, size=100 (inline) file tsc.c (1552)
+        1562, Loop not vectorized/parallelized: contains call
+        1563, Loop not vectorized: data dependency
+              Loop unrolled 4 times
+        1565, s152s inlined, size=4 (inline) file tsc.c (1546)
+        1572, Generated vector simd code for the loop containing reductions
+   5462, s161 inlined, size=99 (inline) file tsc.c (1579)
+        1591, Loop not vectorized/parallelized: contains call
+        1592, Loop not vectorized: data dependency
+        1608, check inlined, size=64 (inline) file tsc.c (160)
+        1608, Generated vector simd code for the loop containing reductions
+   5463, s1161 inlined, size=99 (inline) file tsc.c (1613)
+        1625, Loop not vectorized/parallelized: contains call
+        1626, Generated vector simd code for the loop
+        1642, check inlined, size=64 (inline) file tsc.c (160)
+        1642, Generated vector simd code for the loop containing reductions
+   5464, s162 inlined, size=95 (inline) file tsc.c (1649)
+        1659, Loop not vectorized/parallelized: contains call
+        1661, Generated vector simd code for the loop
+              Residual loop unrolled 7 times (completely unrolled)
+        1670, check inlined, size=64 (inline) file tsc.c (160)
+        1670, Generated vector simd code for the loop containing reductions
+   5465, s171 inlined, size=93 (inline) file tsc.c (1677)
+        1687, Loop not vectorized/parallelized: contains call
+        1688, Generated vector simd code for the loop
+        1696, check inlined, size=64 (inline) file tsc.c (160)
+        1696, Generated vector simd code for the loop containing reductions
+   5466, s172 inlined, size=93 (inline) file tsc.c (1703)
+        1713, Loop not vectorized/parallelized: contains call
+        1714, Generated vector simd code for the loop
+        1722, check inlined, size=64 (inline) file tsc.c (160)
+        1722, Generated vector simd code for the loop containing reductions
+   5467, s173 inlined, size=94 (inline) file tsc.c (1729)
+        1740, Loop not vectorized/parallelized: contains call
+        1741, Generated vector simd code for the loop
+        1749, check inlined, size=64 (inline) file tsc.c (160)
+        1749, Generated vector simd code for the loop containing reductions
+   5468, s174 inlined, size=94 (inline) file tsc.c (1756)
+        1767, Loop not vectorized/parallelized: contains call
+        1768, Generated vector simd code for the loop
+        1776, check inlined, size=64 (inline) file tsc.c (160)
+        1776, Generated vector simd code for the loop containing reductions
