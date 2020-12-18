@@ -28,7 +28,7 @@ Com relação aos resutados obtidos na Seção \ref{chp:2}, destaca-se:
 %
 \item Todos os compiladores aumentaram seus \textit{Speedups} médios; dito isto, \texttt{GCC} foi o compilador que apresentou a maior alteração nos resultados; de fato, seu \textit{Speedup} médio superou o do \texttt{ICC} (Tabela \ref{tab:2_spedups}) e seu número de loops vetorizados superou o do \texttt{PGI} (Tabela \ref{tab:2_nloops}).
 %
-\item A nova flag de otimização base utilizada para o compilador \texttt{GCC} melhorou a performance da versão não-vetorizada (redução de $-1.9\%$ do tempo total), enquanto ofereceu um ganho ainda maior para a versão vetorizada (redução de $-34.7\%$ do tempo total), conforme mostra a Tabela \ref{tab:2_tempos}; a Figura \ref{fig:2_hist}, plot da direita, indica que a assimetria e a curtose diminuíram significativamente com a eliminação da amostra com mais de 20 segundos na versão vetorizada.
+\item A nova flag de otimização base utilizada para o compilador \texttt{GCC} melhorou a performance da versão não-vetorizada (redução de $1.9\%$ do tempo total), enquanto ofereceu um ganho ainda maior para a versão vetorizada (redução de $34.7\%$ do tempo total), conforme mostra a Tabela \ref{tab:2_tempos}; a Figura \ref{fig:2_hist}, plot da direita, indica que a assimetria e a curtose diminuíram significativamente com a eliminação da amostra com mais de 20 segundos na versão vetorizada.
 %
 \item \texttt{PGI} foi o compilador que obteve o menor número de novos loops vetorizados: +2, contra +4 do \texttt{ICC} e +16 do \texttt{GCC} (Tabela \ref{tab:2_nloops}).
 %
